@@ -1,0 +1,107 @@
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Canela Bold';
+    src: url('fuentes/CanelaDeck-Bold-Web.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Canela Black Italic';
+    src: url('fuentes/Canela-BlackItalic-Web.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kobe Black';
+    src: url('fuentes/MonaLisa.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    line-height: 1.7;
+    font-weight: 400;
+    background-color: #EC929E;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;  
+}
+
+.nav__lista {
+    display: flex;
+    list-style: none;
+}
+
+.nav__item {
+    padding: 1em;
+}
+
+.nav__item + .nav__item {
+    margin-left: 2em;
+}
+
+.nav__link {
+    font-family: 'Kobe Black';
+    text-decoration: none;
+   /* text-transform: uppercase;  */
+}
+
+a,
+a:visited,
+a:hover,
+a:focus {
+    color: black;
+    padding: .2rem .5rem;
+    transition: all 0.2s;
+}
+
+a:hover {
+    background-color: rgb(255, 221, 177);
+    /* transform: translateX(1rem); */
+}
+
+
+.contenedor__nav {
+    border: 1px solid black;
+}
+
+h1 {
+    font-family: 'Canela Bold';
+    font-size: 5.3rem;
+    margin-top: 6rem;
+    margin-bottom: 0;
+}
+
+h2 {
+    margin-top: 0;
+    font-family: 'Canela Black Italic';
+    font-size: 5rem;
+}
+
+
+
+
+
