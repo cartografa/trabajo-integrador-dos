@@ -1,0 +1,124 @@
+/*--------------------------------------------------/
+/                    FUENTES                       /
+/-------------------------------------------------*/
+
+@font-face {
+    font-family: 'Canela Bold';
+    src: url('../fuentes/CanelaDeck-Bold-Web.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Canela Black Italic';
+    src: url('../fuentes/Canela-BlackItalic-Web.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kobe Black';
+    src: url('../fuentes/MonaLisa.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*--------------------------------------------------/
+/                  ESTILO GENERAL                   /
+/-------------------------------------------------*/
+
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    line-height: 1.8;
+    font-weight: 400;
+    background: #f3a8b2;
+}
+
+/*--------------------------------------------------/
+/               CLASES UTILITARIAS                 /
+/-------------------------------------------------*/
+
+.contenedor {
+    width: 80%;
+    max-width: 1450px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*--------------------------------------------------/
+/               BARRRA DE NAVEGACIÓN                /
+/-------------------------------------------------*/
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;  
+}
+
+.nav__lista {
+    display: flex;
+    list-style: none;
+}
+
+.nav__item {
+    margin: .3em .5em;
+    padding: .4em .5em;
+    transition: all 0.2s;
+}
+
+.nav__item + .nav__item {
+    margin-left: 2em;
+}
+
+.este-sitio {
+    background-color: rgb(255, 221, 177);
+}
+
+.nav__item:hover {
+    background-color: rgb(255, 221, 177);
+    transform: translateY(-2px);
+}
+
+.nav__item:active {
+    transform: translateY(0);
+}
+
+.nav__link,
+.nav__link:visited,
+.nav__link:focus {
+    font-family: 'Kobe Black';
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: black;
+   
+}
+
+.home {
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+.home {
+    background-color: rgb(238, 116, 156);   
+    border-radius: 50%; 
+}
+
+.home:hover {
+    background-color: rgb(238, 116, 156);       
+}
+
+.contenedor__nav {
+    border: 1px solid black;
+}
