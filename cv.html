@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="css/cv.css">
     <title>CV | Resumé </title>
 </head>
 
 <body>
-    <div class="contenedor__nav">
+    <!-- BARRA DE NAVEGACION-->
+
+    <div class="borde">
         <nav class="nav contenedor">
             <a href="index.html" class="nav__item nav__link home">HOME</a>
             <ul class="nav__lista row">
@@ -25,183 +27,197 @@
             </ul>
         </nav> 
     </div>
-    
-    <main class="cv">
-        <h1 class="nombre">
-            Carolina Santa María
-        </h1> 
 
-        <ul class="contacto">
-            <li class="mail">
-                carolinasantamaria.dev@gmail.com
-            </li>
-            <li class="telefono">
-                +54 9 2284 509036
-            </li>
-            <li class="ciudad">
-                La Plata, Argentina
-            </li>
-        </ul> 
 
-        <section class="educacion">
-            <h3>
-                Educación
-            </h3>
-            <ul>
-                <li>
-                    <h4>
-                        Analista en Tecnologías de la Información y la Comunicación
-                    </h4>
-                    <p>
-                        Facultad de Informática | Universidad Nacional de La Plata <br>
-                        (2020 - presente)
-                    </p>
-                </li>
-                <li>
-                    <h4>
-                        Licenciatura en Letras   
-                    </h4>
-                    <p>
-                        Facultad de Humanidades | Universidad Nacional de La Plata <br>
-                        (tercer año completo - en pausa)
-                    </p>
-                </li>
-            </ul>
-        </section>
 
-        <section class="formacion-complementaria">
-            <h3>
-                Formación Complementaria
-            </h3>
-            <ul>
-                <li>
-                    <h4>
-                        <span class="bold">Desarrollo Front-end</span> | Fundación Telefónica 
-                    </h4>
-                    <p>
-                        (en curso)
-                    </p>
-                </li>
-                <li>
-                    <h4>
-                        <span class="bold">Argentina Programa</span> | Mumuki 
-                    </h4>
-                </li>
-                <li>
-                    <h4>
-                        <span class="bold">Conquering Responsive Layouts</span> | Kevin Powell
-                    </h4>
-                </li>
-                <li>
-                    <h4>
-                        <span class="bold">The Git and Github Bootcamp</span> | Udemy 
-                    </h4>
-                    <p>
-                        Colt Steele & Stephen Grider
-                    </p>
-                </li>
-                <li>
-                    <h4>
-                        <span class="bold">The Modern JavaScript Bootcamp Course</span> | Udemy 
-                    </h4>
-                    <p>
-                        Colt Steele | (en curso)
-                    </p>
-                </li>
-                <li>
-                    <h4>
-                        <span class="bold">Avanced CSS and SASS</span> | Udemy 
-                    </h4>
-                    <p>
-                        Jonas Schmedtmann | (en curso)
-                    </p>
-                </li>
-            </ul>
-        </section>
 
-        <section class="idiomas">
-            <h3>
-                Idiomas
-            </h3>
-            <ul>
-                <li>
-                    <h4>Inglés</h4>
-                    <p>
-                        Avanzado (C1)
-                    </p>
-                </li>
-                <li>
-                    <h4>Japonés</h4>
-                    <p>
-                        Básico (N4)
-                    </p>
-                </li>
-            </ul>
-        </section>
+    <!-- COMIENZA EL CV -->
 
-        <section class="habilidades">
-            <h3>
-                Habilidades
-            </h3>
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3 | Sass</li>
-                <li>JavaScript</li>
-                <li>GIT</li>
-                <li>Figma</li>
-                <li>Adobe Illustrator</li>
-                <li>Adobe Photoshop</li>
-            </ul>
-        </section>
+    <main class="contenedor">
+        <div class="cv-grid">
+            <div class="nombre-contacto">
+                <h1 class="nombre">
+                    <span class="borde-grueso">
+                        Carolina Santa María
+                    </span>
+                </h1> 
+
+                <ul class="contacto">
+                    <li class="mail">
+                        carolinasantamaria.dev@gmail.com
+                    </li>
+                    <li class="telefono">
+                        +54 9 2284 509036
+                    </li>
+                    <li class="ciudad">
+                        La Plata, Argentina
+                    </li>
+                </ul> 
+            </div>
+
+            <section class="redes">
+                <div class="redes__item">
+                    <a class="redes__link" href="https://www.linkedin.com/in/carosantamaria/" target="_blank">LinkedIn &rarr;</a>
+                </div>
+                <div class="redes__item">
+                    <a class="redes__link" href="https://github.com/cartografa" target="_blank">Github &rarr;</a>
+                </div>
+            </section>
+
+            <section class="educacion">
+                <h3>
+                    <span class="resaltado">Educación</span> 
+                </h3>
+                <ul>
+                    <li>
+                        <h4>
+                            Analista en Tecnologías de la Información y la Comunicación
+                        </h4>
+                        <p>
+                            Facultad de Informática | Universidad Nacional de La Plata <br>
+                            (2020 - presente)
+                        </p>
+                    </li>
+                    <li>
+                        <h4>
+                            Desarrollo Full Stack con Node.js
+                        </h4>
+                        <p>
+                            Educación IT | Proyecto Digit@lers <br>
+                            (mayo 2021 - octubre 2021)
+                        </p>
+                    </li>
+                    <li>
+                        <h4>
+                            Licenciatura en Letras   
+                        </h4>
+                        <p>
+                            Facultad de Humanidades | Universidad Nacional de La Plata <br>
+                            (2012 - 2016 | en pausa)
+                        </p>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="formacion-complementaria">
+                <h3>
+                    <span class="resaltado">Formación Complementaria</span>
+                </h3>
+                <ul>
+                    <li>
+                        <h4>
+                            Desarrollo Front-end | <span class="light">Fundación Telefónica</span> 
+                        </h4>
+                        <p>
+                            (en curso)
+                        </p>
+                    </li>
+                    <li>
+                        <h4>
+                            Argentina Programa | <span class="light">Ministerio de Desarrollo Productivo</span> 
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            Conquering Responsive Layouts | <span class="light">Kevin Powell</span>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            The Git and Github Bootcamp | <span class="light">Udemy</span> 
+                        </h4>
+                        <p>
+                            Colt Steele & Stephen Grider
+                        </p>
+                    </li>
+                    <li>
+                        <h4>
+                            The Modern JavaScript Bootcamp Course | <span class="light">Udemy</span> 
+                        </h4>
+                        <p>
+                            Colt Steele | (en curso)
+                        </p>
+                    </li>
+                    <li>
+                        <h4>
+                            Avanced CSS and SASS | <span class="light">Udemy</span> 
+                        </h4>
+                        <p>
+                            Jonas Schmedtmann | (en curso)
+                        </p>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="idiomas">
+                <h3>
+                    <span class="resaltado">Idiomas</span>
+                </h3>
+                <ul>
+                    <li>
+                        <h4>Inglés</h4>
+                        <p>
+                            Avanzado (C1)
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Japonés</h4>
+                        <p>
+                            Básico (N5)
+                        </p>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="tecnologias">
+                <h3>
+                    <span class="resaltado">Tecnologías</span>
+                </h3>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3 | Sass</li>
+                    <li>JavaScript</li>
+                    <li>GIT</li>
+                    <li>Figma</li>
+                    <li>Adobe Illustrator</li>
+                    <li>Adobe Photoshop</li>
+                </ul>
+            </section>
+
+            <section class="experiencia">
+                <h3><span class="resaltado">Experiencia</span></h3>
+                <ul>
+                    <li>
+                        <h4>
+                            <span class="bold">Correctora de textos</span> | Freelance
+                        </h4>
+                        <p>
+                            (2018 - actualidad) <br>
+                            Correción de estilo y ortotipográfica, aplicación de normas APA y revisión en escritos académicos o periodísticos.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>
+                            <span class="bold">Tallerista - Fundamentos del Dibujo</span> | Freelance
+                        </h4>
+                        <p>
+                            (2019 - 2020) <br>
+                            Clases en grupos reducidos sobre análisis de estilo, composición, técnica, perspectiva, estructura, valorización y teoría del color.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>
+                            <span class="bold">Maestra auxiliar de primaria</span> | Colegio Raíces de Gonnet
+                        </h4>
+                        <p>
+                            (2017 - 2019) <br>
+                            Acompañamiento y clases de apoyo. Planeamiento y organización general de las jornadas. Dictado del Taller de Caligrafía. 
+                        </p>
+                    </li>
+                </ul>
+            </section>
+        </div>
     </main>
-
-    <section class="redes">
-        <h3>
-            Redes
-        </h3>
-        <ul>
-            <li>
-                <a href="https://www.linkedin.com/in/carosantamaria/" target="_blank">LinkedIn</a>
-            </li>
-            <li>
-                <a href="https://github.com/cartografa" target="_blank">Github</a>
-            </li>
-        </ul>
-    </section>
-</main>
-
-    <section class="experiencia">
-        <h3>Experiencia</h3>
-        <ul>
-            <li>
-                <h4>
-                    <span class="bold">Correctora de textos</span> | Freelance
-                </h4>
-                <p>
-                    (2018 - actualidad) <br>
-                    Correción de estilo y ortotipográfica, aplicación de normas APA y revisión en escritos académicos o periodísticos.
-                </p>
-            </li>
-            <li>
-                <h4>
-                    <span class="bold">Tallerista - Fundamentos del Dibujo</span> | Freelance
-                </h4>
-                <p>
-                    (2019 - 2020) <br>
-                    Clases en grupos reducidos sobre análisis de estilo, composición, técnica, perspectiva, configuración y estructura, valorización, teoría del color.
-                </p>
-            </li>
-            <li>
-                <h4>
-                    <span class="bold">Maestra auxiliar de primaria</span> | Colegio Raíces de Gonnet
-                </h4>
-                <p>
-                    (2017 - 2019) <br>
-                    Acompañamiento y clases de apoyo. Planeamiento y organización general de las jornadas. Dictado del Taller de Caligrafía. 
-                </p>
-            </li>
-        </ul>
-    </section>
     
 </body>
 </html>
