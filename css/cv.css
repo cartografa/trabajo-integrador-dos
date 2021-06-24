@@ -55,15 +55,6 @@ body {
     justify-content: space-between;
 }
 
-.resaltado {
-    padding: 0 .2rem;
-    background-color: rgb(167, 204, 169);
-}
-
-.light {
-    font-weight: 400;
-}
-
 .borde {
     border: 1px solid black;
 }
@@ -74,6 +65,16 @@ body {
 
 .este-sitio {
     background-color: rgb(255, 221, 177);
+}
+
+
+.resaltado {
+    padding: 0 .2rem;
+    background-color: rgb(167, 204, 169);
+}
+
+.light {
+    font-weight: 400;
 }
 
 /*--------------------------------------------------/
@@ -123,9 +124,6 @@ body {
 .home {
     font-size: 1.5rem;
     text-decoration: underline wavy;
-}
-
-.home {
     background-color: rgb(238, 116, 156);   
     border-radius: 50%; 
 }
@@ -140,9 +138,10 @@ body {
 
 .cv-grid {
     display: grid;
-    gap: .5rem 2rem;
+    gap: 1rem 2rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: minmax(0,1fr) minmax(0,1.7fr) minmax(0,2fr);
+    grid-template-rows: auto-fit minmax(0,1fr) minmax(0,1.2fr) minmax(0,2fr);
+    margin-bottom: 3rem;
 }
 
 .nombre-contacto {
@@ -178,6 +177,8 @@ body {
 .tecnologias {
     grid-column: 4 / 5;
     grid-row: 2 / 3;
+    line-height: 1.3;
+    font-weight: 600;
 }
 
 
@@ -221,7 +222,7 @@ ul {
 }
 
 li {
-    margin-bottom: .5rem;
+    margin-bottom: .7rem;
 }
 
 
@@ -241,6 +242,6 @@ li {
 }
 
 .redes__link:hover {
-    background-color: rgb(90, 192, 255);
+    background-color: rgb(68, 183, 255);
 }
 
