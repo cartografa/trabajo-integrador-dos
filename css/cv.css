@@ -229,10 +229,6 @@ li {
 /                 LINKS A REDES                     /
 /-------------------------------------------------*/
 
-.redes__item {
-    transition: all 0.2s;
-}
-
 .redes__link {
     margin-bottom: 1em;
     background-color: lightskyblue;
@@ -241,13 +237,10 @@ li {
     color: black;
     text-decoration: none;
     text-transform: uppercase;
+    transition: all 0.3s;
 }
 
-.redes__item:hover {
-    transform: translateY(-2px);
-}
-
-.redes__item:active {
-    transform: translateY(0);
+.redes__link:hover {
+    background-color: rgb(90, 192, 255);
 }
 
