@@ -37,7 +37,7 @@ body {
     margin: 0;
     line-height: 1.8;
     font-weight: 400;
-    background: #f3a8b2;
+    background: #eea2ac;
 }
 
 /*--------------------------------------------------/
@@ -115,7 +115,7 @@ body {
 .nav__link,
 .nav__link:visited,
 .nav__link:focus {
-    font-family: 'Kobe Black';
+    font-family: 'Kobe Black', monospace;
     font-size: 1.2rem;
     text-decoration: none;
     color: black;  
@@ -187,14 +187,14 @@ body {
 /-------------------------------------------------*/
 
 h1 {
-    font-family: 'Canela Bold';
+    font-family: 'Canela Bold', serif;
     font-size: 3rem;
     margin-bottom: 1rem;
     line-height: 1.2;
 }
 
 h3 {
-    font-family: 'Chiswick Sans Regular';
+    font-family: 'Chiswick Sans Regular', sans-serif;
     font-size: 1.7rem;
     margin: 0 0 .7rem;
 }
@@ -210,12 +210,12 @@ p {
 }
 
 .contacto {
-    font-family: 'Kobe Black';
+    font-family: 'Kobe Black', monospace;
     line-height: 1.3;
 }
 
 ul {
-    font-family: 'Kobe Black';
+    font-family: 'Kobe Black', monospace;
     list-style: none;
     padding-left: 0;
     margin: 0;
@@ -233,7 +233,7 @@ li {
 .redes__link {
     margin-bottom: 1em;
     background-color: lightskyblue;
-    font-family: 'Kobe Black';
+    font-family: 'Kobe Black', monospace;
     font-size: 1.2em;
     color: black;
     text-decoration: none;
@@ -244,4 +244,3 @@ li {
 .redes__link:hover {
     background-color: rgb(68, 183, 255);
 }
-

@@ -110,11 +110,10 @@ body {
 .nav__link,
 .nav__link:visited,
 .nav__link:focus {
-    font-family: 'Kobe Black';
+    font-family: 'Kobe Black', monospace;
     font-size: 1.2rem;
     text-decoration: none;
     color: black;
-   
 }
 
 .contenedor__nav {
@@ -127,7 +126,7 @@ body {
 /-------------------------------------------------*/
 
 h1 {
-    font-family: 'Canela Bold';
+    font-family: 'Canela Bold', serif;
     font-size: 5.5rem;
     text-decoration: underline;
     margin-top: 8rem;
@@ -136,16 +135,9 @@ h1 {
 
 h2 {
     margin-top: 0;
-    font-family: 'Canela Black Italic';
+    font-family: 'Canela Black Italic', serif;
     font-size: 5rem;
 }
-
-
-/*--------------------------------------------------/
-/                TABLA / FORMULARIO                 /
-/-------------------------------------------------*/
-
-
 
 
 

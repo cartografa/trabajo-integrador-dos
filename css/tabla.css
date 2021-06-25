@@ -37,7 +37,6 @@ body {
     margin: 0;
     line-height: 1.8;
     font-weight: 400;
-    /* background: #eca277; */
     background: linear-gradient(-45deg, #ee7752, #f3a8b2, #ff9355);
     background-size: 400% 400%;
     animation: gradient 16s ease infinite;
@@ -139,42 +138,55 @@ main {
 }
 
 table {
-    font-family: 'Kobe Black';
-    min-width: 70vh;
+    font-family: 'Kobe Black', monospace;
+    font-size: 1.1rem;
+    min-width: 75vh;
     border-radius: 2.5rem .625rem; 
     vertical-align: middle;
-    /* background-color: rgb(255, 221, 177); */
     background-color: #c7685f;
-    box-shadow: 0 0 1.2rem rgba(233, 102, 90, .15);
+    box-shadow: 0 0 1.2em rgba(233, 102, 90, .15);
     text-align: center;
     border-spacing: 0;
 }
 
 .titulo {
-    font-family: 'Canela Black Italic';
+    font-family: 'Canela Black Italic', serif;
     font-size: 2rem;
     border-collapse: separate;
-    padding-bottom: .4rem;
+    padding-bottom: .4em;
     background-color: rgb(187, 108, 253);
     border-radius: 2.5rem .625rem 0 0; 
+}
+ 
+td {
+    padding: .3em 0;
 }
 
 td + td {
     border-left: 2px solid black;
 }
 
-
 tr:nth-child(even) {
     background-color: rgb(148, 202, 151);
 }
 
+tr:nth-child(odd) a {
+    background: linear-gradient(rgb(255, 221, 177) 0 0) left / var(--d, 0%) 100% no-repeat;
+    transition: all 0.3s ease-out;
+}
+
 tr:nth-child(odd) a:hover {
-    background-color: rgb(255, 221, 177);
+    --d: 100%;
     cursor: pointer;
 }
 
+tr:nth-child(even) a {
+    background: linear-gradient(rgb(238, 116, 156) 0 0) left / var(--d, 0%) 100% no-repeat;
+    transition: all 0.3s ease-out;
+}
+
 tr:nth-child(even) a:hover {
-    background-color: rgb(238, 116, 156);
+    --d: 100%;
     cursor: pointer;
 }
 
