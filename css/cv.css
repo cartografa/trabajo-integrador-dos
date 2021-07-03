@@ -67,7 +67,6 @@ body {
     background-color: rgb(255, 221, 177);
 }
 
-
 .resaltado {
     padding: 0 .2rem;
     background-color: rgb(167, 204, 169);
@@ -139,45 +138,42 @@ body {
 .cv-grid {
     display: grid;
     gap: 1rem 2rem;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto-fit minmax(0,1fr) minmax(0,1.2fr) minmax(0,2fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+        'nomcon nomcon nom-con redes' 
+        'edu edu idiomas tecnologias'   
+        'forcom forcom exp exp';       
     margin-bottom: 3rem;
 }
 
 .nombre-contacto {
-    grid-column: 1 / 4;
+    grid-area: nomcon;
 }
 
 .redes {
-    grid-column: 4 / 5;
+    grid-area: redes;
     margin-top: 3.5rem;
     text-align: end;
 }
 
 .educacion {
-    grid-column: 1 / 3;
-    grid-row: 2 / 3;
+    grid-area: edu;
 }
 
 .experiencia {
-    grid-column: 3 / 5;
-    grid-row: 3 / 4;    
+    grid-area: exp;
 }
 
 .formacion-complementaria {
-    grid-column: 1 / 3;
-    grid-row: 3 / 4;
+    grid-area: forcom;
 }
 
 .idiomas {
-    grid-column: 3 / 4;
-    grid-row: 2 / 3;
+    grid-area: idiomas;
 }
 
 .tecnologias {
-    grid-column: 4 / 5;
-    grid-row: 2 / 3;
-    line-height: 1.3;
+    grid-area: tecnologias;
     font-weight: 600;
 }
 
@@ -243,4 +239,37 @@ li {
 
 .redes__link:hover {
     background-color: rgb(68, 183, 255);
+}
+
+/*--------------------------------------------------/
+/                  MEDIA QUERIES                   /
+/-------------------------------------------------*/
+
+@media (max-width: 43.75em) {
+    .cv-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        'nomcon nomcon' 
+        'edu edu'  
+        'forcom forcom' 
+        'exp exp' 
+        'idiomas tecnologias' 
+        '. redes';     
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    p, li {
+        font-size: .9rem;
+    }
 }
